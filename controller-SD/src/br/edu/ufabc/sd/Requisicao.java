@@ -14,6 +14,8 @@ public class Requisicao implements java.io.Serializable{
     // tipos de mensagem
     public static final int NEW_PLAYER = 0;
     public static final int GET_PLAYER = 1;
+    public static final int ALL_PLAYERS = 2;
+    
     
     private int    messageType;
     private Player playerContent;

@@ -14,9 +14,13 @@ public class Resposta implements java.io.Serializable{
     public static final int NEW_PLAYER_ERROR = -1;
     public static final int GET_PLAYER_OK    =  1;
     public static final int PLAYER_NOT_FOUND = -2;
+    public static final int ALL_PLAYERS_OK = 2;
+    public static final int ALL_PLAYERS_ERROR = -3;
+
     
     private int messageStatus;
     private Player playerContent;
+    private int[] playersList;
 
     /**
      * @return the messageStatus
@@ -44,6 +48,16 @@ public class Resposta implements java.io.Serializable{
      */
     public void setPlayerContent(Player playerContent) {
         this.playerContent = playerContent;
+    }
+    
+    public int[] getPlayersList()
+    {
+        return playersList;
+    }
+    
+    public void setPlayersList(int[] playersList)
+    {
+        this.playersList = playersList;
     }
     
     

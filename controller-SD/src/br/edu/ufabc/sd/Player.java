@@ -18,6 +18,21 @@ public class Player implements java.io.Serializable{
     /**
      * @return the id
      */
+     
+    Player(int id)
+    {
+        setId(id);
+    }
+    
+    Player(int id, String name, String email, float Score)
+    {
+        setId(id);
+        setName(name);
+        setEmail(email);
+        setScore(Score);
+    }
+            
+    
     public int getId() {
         return id;
     }
