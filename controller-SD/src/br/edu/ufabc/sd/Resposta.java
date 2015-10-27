@@ -16,7 +16,7 @@ public class Resposta implements java.io.Serializable{
     public static final int PLAYER_NOT_FOUND = -2;
     public static final int ALL_PLAYERS_OK = 2;
     public static final int ALL_PLAYERS_ERROR = -3;
-
+    public static final int INCONSISTENT_DATA = -4; 
     
     private int messageStatus;
     private Player playerContent;
